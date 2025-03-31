@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-Try it now: [st4lwolf/LightMT](https://main.st4lwolf.org/projects/LightMT) *(replace with your actual URL)*
+Try it now: [st4lwolf/LightMT](https://main.st4lwolf.org/projects/LightMT)
 
 ## Tools Overview
 
