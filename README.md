@@ -1,9 +1,8 @@
 # LightMT 🎵
 
-![LightMT Banner](assets/banner.png)
+![LightMT Banner](logo.png)
 
 **Free, lightweight web-based music tools for musicians**  
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Features
 
@@ -16,7 +15,7 @@
 
 ## Live Demo
 
-Try it now: [https://yourdomain.com](https://yourdomain.com) *(replace with your actual URL)*
+Try it now: [https://yourdomain.com](https://main.st4lwolf.org/projects/LightMT) *(replace with your actual URL)*
 
 ## Tools Overview
 
