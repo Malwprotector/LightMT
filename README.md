@@ -1,13 +1,13 @@
-# LightMusicTools 🎵
+# LightMT 🎵
 
-![LightMusicTools Banner](assets/banner.png) *(optional: add a banner image later)*
+![LightMT Banner](assets/banner.png)
 
 **Free, lightweight web-based music tools for musicians**  
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Features
 
-🚀 **All-in-one hub** for music practice tools  
+🚀 **Two-in-one hub** for music practice tools  
 🎸 **LightTune** - Accurate instrument tuner  
 ♫ **LightMetronome** - Precision rhythm keeper  
 📱 **Mobile-friendly** works on all devices  
