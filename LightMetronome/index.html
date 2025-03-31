@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precision Metronome</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="metronome-container">
+        <h1>Precision Metronome</h1>
+        
+        <div class="bpm-control">
+            <button id="decrease-bpm" aria-label="Decrease tempo">-</button>
+            <div class="bpm-display">
+                <span id="bpm-value">120</span>
+                <span>BPM</span>
+            </div>
+            <button id="increase-bpm" aria-label="Increase tempo">+</button>
+        </div>
+        
+        <div class="beat-selector">
+            <button class="beat-option" data-beats="1">1/4</button>
+            <button class="beat-option" data-beats="2">2/4</button>
+            <button class="beat-option" data-beats="3">3/4</button>
+            <button class="beat-option" data-beats="4" data-active>4/4</button>
+            <button class="beat-option" data-beats="6">6/8</button>
+        </div>
+        
+        <div class="sound-selector">
+            <button class="sound-option" data-sound="click" data-active>Click</button>
+            <button class="sound-option" data-sound="wood">Wood</button>
+            <button class="sound-option" data-sound="beep">Beep</button>
+        </div>
+        
+        <div class="visualizer">
+            <div class="visualizer-dot"></div>
+        </div>
+        
+        <button id="start-stop" class="main-button">Start</button>
+        
+        <div class="tap-tempo">
+            <button id="tap-button">Tap Tempo</button>
+            <span id="tap-count">Tap 4 times to set tempo</span>
+        </div>
+    </div>
+    
+    <script src="metronome.js"></script>
+</body>
+</html>

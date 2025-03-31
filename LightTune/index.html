@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>LightTuner - Guitar Tuner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4a148c">
+    <meta name="description" content="LightTuner - A lightweight, accurate guitar tuner for your browser">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>LightTuner</h1>
+        </header>
+        
+        <main class="tuner-container">
+            <div class="frequency-display">
+                <div class="note-display" id="note-name">--</div>
+                <div class="hz-display" id="frequency">0 Hz</div>
+            </div>
+            
+            <div class="tuner-visual">
+                <div class="needle-container">
+                    <div class="needle" id="needle"></div>
+                </div>
+                <div class="tuner-labels">
+                    <span>Flat</span>
+                    <span>In Tune</span>
+                    <span>Sharp</span>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button id="toggle-microphone" class="btn primary">
+                    <span class="icon">🎤</span>
+                    <span class="text">Start Tuning</span>
+                </button>
+                <button id="play-reference" class="btn secondary">
+                    <span class="icon">🔊</span>
+                    <span class="text">Play A4 (440Hz)</span>
+                </button>
+            </div>
+        </main>
+        
+        <footer class="app-footer">
+            <p>LightTuner v1.0 - Works best with Chrome or Firefox</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

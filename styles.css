@@ -1,0 +1,251 @@
+/* Hub-specific styles */
+.hub-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.hub-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 2rem;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #6200ee;
+    margin-bottom: 0.2rem;
+}
+
+.logo p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.hub-nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #6200ee;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #6200ee;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.tool-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tool-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.tool-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #6200ee;
+}
+
+.tool-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.tool-button {
+    display: inline-block;
+    background-color: #6200ee;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    width: 80%;
+    text-align: center;
+}
+
+.tool-button:hover {
+    background-color: #3700b3;
+}
+
+.feature-highlights {
+    margin: 3rem 0;
+    padding: 2rem 0;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.feature-highlights h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #6200ee;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.feature {
+    text-align: center;
+    padding: 1rem;
+}
+
+.feature-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.feature h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #6200ee;
+}
+
+.feature p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.hub-footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: auto;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* About page styles */
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.about-section {
+    margin-bottom: 2.5rem;
+}
+
+.about-section h3 {
+    color: #6200ee;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.about-section p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.about-section ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.about-section li {
+    margin-bottom: 0.5rem;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #6200ee;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    margin-top: 2rem;
+}
+
+.back-button:hover {
+    background-color: #3700b3;
+}
+
+.back-to-tools {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hub-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .hub-nav {
+        justify-content: center;
+    }
+
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tool-card {
+        padding: 1.5rem;
+    }
+}
