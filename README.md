@@ -16,7 +16,7 @@
 ## Live Demo
 
 Try it now: [st4lwolf/LightMT](https://main.st4lwolf.org/projects/LightMT)
-It's a very new project so I still have to correct some bugs.
+It's a very new project so I still have to correct some bugs. The tuner seems to have some problems so it's not working right now. I have to correct this.
 ## Tools Overview
 
 ### 🎸 LightTune
