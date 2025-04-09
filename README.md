@@ -38,6 +38,6 @@ No installation needed! Simply visit the website in your browser.
 For local development:
 
 ```bash
-git clone https://github.com/yourusername/LightMusicTools.git
+git clone https://github.com/Malwprotector/LightMT.git
 cd LightMusicTools
 # Open index.html in your browser
